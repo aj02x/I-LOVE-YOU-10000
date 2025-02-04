@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Forever Valentine 💌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Password Entry Section -->
+    <div class="password-section" id="passwordSection">
+        <h1>Enter the 6 digit password to continue </h1>
+        <input type="password" id="passwordInput" class="password-input" placeholder="Enter password">
+        <button onclick="checkPassword()" class="cute-button">Submit</button>
+        <p id="errorMessage" style="color: red; display: none;">Incorrect Password, please try again.</p>
+        <p id="passwordHint" style="color: grey; font-size: 12px; display: none;">Hint: Official Day</p> <!-- Hint text -->
+    </div>
+
+    <!-- Yay! You Got It! Section -->
+    <div class="yay-section" id="yaySection" style="display: none;" onclick="goToNext()">
+        <h1>Yay! You got it! 💖</h1>
+        <p>Click here to continue...</p>
+    </div>
+
+    <!-- Title and First Click Here -->
+    <div class="title" id="titleSection" style="display:none;">
+        <h1>To My Forever Valentine 💌</h1>
+        <button onclick="showLetter()" class="cute-button" id="firstClickButton">Click Here 💖</button> <!-- Button to show the letter -->
+    </div>
+
+    <div class="content">
+
+        <!-- Letter Section -->
+        <div id="letter" class="content-item letter-style" style="display:none;">
+            <p>Dear Love,</p>
+            <p>Every day I spend with you reminds me just how incredibly lucky I am. You make everything feel brighter and more beautiful, just by being you. Whether it's a simple laugh we share, a quiet moment together, or even the challenges we face side by side, every single moment with you means the world to me.</p>
+            <p>When I look at you, I see someone who makes my heart feel full, someone who knows me better than anyone else and loves me anyway. Your kindness, your smile, your warmth—they all make me feel so safe and happy. You make life more colorful, and you help me see the good in everything, even when things aren’t perfect.</p>
+            <p>I don’t think I could ever truly express how much I love you, but I will spend my whole life showing you. I love you more every single day. The way you make me feel is something I never imagined could be real, and I treasure it more than anything.</p>
+            <p>You’re my best friend, my partner, and my greatest love. I don’t need anything else as long as I have you. The love we share feels like home, and I can’t wait to keep building our future together, one day at a time.</p>
+            <p>So, on this special day, I just want to say from the bottom of my heart—Happy Valentine’s Day, my love! I love you more than words could ever truly capture. Thank you for being everything I never knew I needed, and for loving me the way you do. You make my life better just by being in it, and I’m so grateful for you.</p>
+            <p>I miss you more than you know, and I can’t wait to be with you again soon. Until then, know that I’m thinking of you always. I love you so much and I hope you know it.</p>
+            <p>- Jhay 💖</p>
+
+            <!-- Button to show the final Valentine's message -->
+            <button onclick="showValentineMessage()" class="cute-button">Click Here 💖</button> <!-- Button for Valentine's Message -->
+        </div>
+
+        <!-- Valentine's Message Section -->
+        <div id="valentineMessage" class="content-item valentine-message" style="display:none;">
+            <h2>Happy Valentines My Love 💖</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
